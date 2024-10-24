@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <servlet>
+        <servlet-name>Manejador</servlet-name>
+        <servlet-class>controlador.Manejador</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ManejadorCarrera</servlet-name>
+        <servlet-class>controlador.ManejadorCarrera</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ManejadorMateria</servlet-name>
+        <servlet-class>controlador.ManejadorMateria</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ManejadorFacultad</servlet-name>
+        <servlet-class>controlador.ManejadorFacultad</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>Manejador</servlet-name>
+        <url-pattern>/SolicitarDatosAlumno</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Manejador</servlet-name>
+        <url-pattern>/AgregarAlumno</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Manejador</servlet-name>
+        <url-pattern>/ListarAlumno</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ManejadorCarrera</servlet-name>
+        <url-pattern>/SolicitarDatosCarrera</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ManejadorCarrera</servlet-name>
+        <url-pattern>/AgregarCarrera</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ManejadorCarrera</servlet-name>
+        <url-pattern>/ListarCarrera</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>ManejadorFacultad</servlet-name>
+        <url-pattern>/Facultad</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>ManejadorFacultad</servlet-name>
+        <url-pattern>/AgregarFacultad</url-pattern>
+    </servlet-mapping>
+    
+      <servlet-mapping>
+        <servlet-name>ManejadorMateria</servlet-name>
+        <url-pattern>/AgregarMateria</url-pattern>
+    </servlet-mapping>
+    
+     <servlet-mapping>
+        <servlet-name>ManejadorMateria</servlet-name>
+        <url-pattern>/ListarMateria</url-pattern>
+    </servlet-mapping>
+    
+    
+     <servlet-mapping>
+        <servlet-name>ManejadorMateria</servlet-name>
+        <url-pattern>/SolicitarDatosMateria</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>ManejadorMateria</servlet-name>
+        <url-pattern>/ListarAlumnosConMaterias</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>ManejadorFacultad</servlet-name>
+        <url-pattern>/SolicitarDatosFacultad</url-pattern>
+    </servlet-mapping>
+    
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
