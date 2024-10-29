@@ -36,12 +36,6 @@ import java.util.Collection;
     @NamedQuery(name = "Usuario.findByClave", query = "SELECT u FROM Usuario u WHERE u.clave = :clave")})
 public class Usuario implements Serializable {
 
-    private static final long serialVersionUID = 1L;
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Basic(optional = false)
-    @Column(name = "idusuario", nullable = false)
-    private Integer idusuario;
     @Basic(optional = false)
     @NotNull
     @Size(min = 1, max = 45)
@@ -52,6 +46,13 @@ public class Usuario implements Serializable {
     @Size(min = 1, max = 45)
     @Column(name = "clave", nullable = false, length = 45)
     private String clave;
+
+    private static final long serialVersionUID = 1L;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Basic(optional = false)
+    @Column(name = "idusuario", nullable = false)
+    private Integer idusuario;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "usuarioIdusuario")
     private Collection<Docente> docenteCollection;
 
@@ -76,21 +77,6 @@ public class Usuario implements Serializable {
         this.idusuario = idusuario;
     }
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public String getClave() {
-        return clave;
-    }
-
-    public void setClave(String clave) {
-        this.clave = clave;
-    }
 
     @XmlTransient
     public Collection<Docente> getDocenteCollection() {
@@ -124,6 +110,22 @@ public class Usuario implements Serializable {
     @Override
     public String toString() {
         return "entidades.Usuario[ idusuario=" + idusuario + " ]";
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getClave() {
+        return clave;
+    }
+
+    public void setClave(String clave) {
+        this.clave = clave;
     }
     
 }

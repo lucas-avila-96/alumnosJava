@@ -6,13 +6,16 @@ C:\Users\Lucas\Documents\NetBeansProjects\alumno\src\main\java\com\mycompany\alu
 C:\Users\Lucas\Documents\NetBeansProjects\alumno\src\main\java\sesiones\AlumnoFacade.java
 C:\Users\Lucas\Documents\NetBeansProjects\alumno\src\main\java\sesiones\MateriaHasAlumnoFacade.java
 C:\Users\Lucas\Documents\NetBeansProjects\alumno\src\main\java\controlador\ManejadorCarrera.java
+C:\Users\Lucas\Documents\NetBeansProjects\alumno\src\main\java\sesiones\DocenteFacade.java
 C:\Users\Lucas\Documents\NetBeansProjects\alumno\src\main\java\entidades\Materia.java
 C:\Users\Lucas\Documents\NetBeansProjects\alumno\src\main\java\com\mycompany\alumno\resources\JakartaEE10Resource.java
+C:\Users\Lucas\Documents\NetBeansProjects\alumno\src\main\java\controlador\ManejadorDocente.java
 C:\Users\Lucas\Documents\NetBeansProjects\alumno\src\main\java\entidades\Carrera.java
 C:\Users\Lucas\Documents\NetBeansProjects\alumno\src\main\java\sesiones\MateriaFacade.java
 C:\Users\Lucas\Documents\NetBeansProjects\alumno\src\main\java\controlador\ManejadorMateria.java
 C:\Users\Lucas\Documents\NetBeansProjects\alumno\src\main\java\entidades\MateriaHasAlumno.java
 C:\Users\Lucas\Documents\NetBeansProjects\alumno\src\main\java\entidades\Facultad.java
+C:\Users\Lucas\Documents\NetBeansProjects\alumno\src\main\java\sesiones\UsuarioFacade.java
 C:\Users\Lucas\Documents\NetBeansProjects\alumno\src\main\java\controlador\Manejador.java
 C:\Users\Lucas\Documents\NetBeansProjects\alumno\src\main\java\sesiones\CarreraFacade.java
 C:\Users\Lucas\Documents\NetBeansProjects\alumno\src\main\java\entidades\Alumno.java

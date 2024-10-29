@@ -37,17 +37,18 @@ import java.util.Collection;
     @NamedQuery(name = "Docente.findByNombre", query = "SELECT d FROM Docente d WHERE d.nombre = :nombre")})
 public class Docente implements Serializable {
 
+    @Basic(optional = false)
+    @NotNull
+    @Size(min = 1, max = 45)
+    @Column(name = "nombre", nullable = false, length = 45)
+    private String nombre;
+
     private static final long serialVersionUID = 1L;
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Basic(optional = false)
     @Column(name = "iddocente", nullable = false)
     private Integer iddocente;
-    @Basic(optional = false)
-    @NotNull
-    @Size(min = 1, max = 45)
-    @Column(name = "nombre", nullable = false, length = 45)
-    private String nombre;
     @JoinTable(name = "materia_has_docente", joinColumns = {
         @JoinColumn(name = "docente_iddocente", referencedColumnName = "iddocente", nullable = false)}, inverseJoinColumns = {
         @JoinColumn(name = "materia_idmateria", referencedColumnName = "idmateria", nullable = false)})
@@ -77,13 +78,6 @@ public class Docente implements Serializable {
         this.iddocente = iddocente;
     }
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
 
     @XmlTransient
     public Collection<Materia> getMateriaCollection() {
@@ -125,6 +119,14 @@ public class Docente implements Serializable {
     @Override
     public String toString() {
         return "entidades.Docente[ iddocente=" + iddocente + " ]";
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
     
 }

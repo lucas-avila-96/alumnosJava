@@ -1,8 +1,11 @@
 sesiones\AbstractFacade.class
 controlador\ManejadorCarrera.class
+controlador\ManejadorDocente.class
 entidades\MateriaHasAlumno.class
+sesiones\UsuarioFacade.class
 controlador\Manejador.class
 entidades\Alumno.class
+sesiones\DocenteFacade.class
 entidades\Materia.class
 sesiones\FacultadFacade.class
 controlador\ManejadorFacultad.class

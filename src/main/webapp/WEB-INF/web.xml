@@ -16,7 +16,12 @@
         <servlet-name>ManejadorFacultad</servlet-name>
         <servlet-class>controlador.ManejadorFacultad</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ManejadorDocente</servlet-name>
+        <servlet-class>controlador.ManejadorDocente</servlet-class>
+    </servlet>
     
+    <!-- Mappings for Manejador -->
     <servlet-mapping>
         <servlet-name>Manejador</servlet-name>
         <url-pattern>/SolicitarDatosAlumno</url-pattern>
@@ -29,6 +34,26 @@
         <servlet-name>Manejador</servlet-name>
         <url-pattern>/ListarAlumno</url-pattern>
     </servlet-mapping>
+    
+    <!-- Mappings for ManejadorDocente -->
+    <servlet-mapping>
+        <servlet-name>ManejadorDocente</servlet-name>
+        <url-pattern>/ListarDocente</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ManejadorDocente</servlet-name>
+        <url-pattern>/ListarAlumnosRendidos</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ManejadorDocente</servlet-name>
+        <url-pattern>/SolicitarDatosDocente</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ManejadorDocente</servlet-name>
+        <url-pattern>/AgregarDocente</url-pattern>
+    </servlet-mapping>
+    
+    <!-- Mappings for ManejadorCarrera -->
     <servlet-mapping>
         <servlet-name>ManejadorCarrera</servlet-name>
         <url-pattern>/SolicitarDatosCarrera</url-pattern>
@@ -42,45 +67,39 @@
         <url-pattern>/ListarCarrera</url-pattern>
     </servlet-mapping>
     
+    <!-- Mappings for ManejadorFacultad -->
     <servlet-mapping>
         <servlet-name>ManejadorFacultad</servlet-name>
         <url-pattern>/Facultad</url-pattern>
     </servlet-mapping>
-    
     <servlet-mapping>
         <servlet-name>ManejadorFacultad</servlet-name>
         <url-pattern>/AgregarFacultad</url-pattern>
     </servlet-mapping>
-    
-      <servlet-mapping>
-        <servlet-name>ManejadorMateria</servlet-name>
-        <url-pattern>/AgregarMateria</url-pattern>
-    </servlet-mapping>
-    
-     <servlet-mapping>
-        <servlet-name>ManejadorMateria</servlet-name>
-        <url-pattern>/ListarMateria</url-pattern>
-    </servlet-mapping>
-    
-    
-     <servlet-mapping>
-        <servlet-name>ManejadorMateria</servlet-name>
-        <url-pattern>/SolicitarDatosMateria</url-pattern>
-    </servlet-mapping>
-    
-    <servlet-mapping>
-        <servlet-name>ManejadorMateria</servlet-name>
-        <url-pattern>/ListarAlumnosConMaterias</url-pattern>
-    </servlet-mapping>
-    
     <servlet-mapping>
         <servlet-name>ManejadorFacultad</servlet-name>
         <url-pattern>/SolicitarDatosFacultad</url-pattern>
     </servlet-mapping>
     
+    <!-- Mappings for ManejadorMateria -->
+    <servlet-mapping>
+        <servlet-name>ManejadorMateria</servlet-name>
+        <url-pattern>/AgregarMateria</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ManejadorMateria</servlet-name>
+        <url-pattern>/ListarMateria</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ManejadorMateria</servlet-name>
+        <url-pattern>/SolicitarDatosMateria</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ManejadorMateria</servlet-name>
+        <url-pattern>/ListarAlumnosConMaterias</url-pattern>
+    </servlet-mapping>
+
     <session-config>
-        <session-timeout>
-            30
-        </session-timeout>
+        <session-timeout>30</session-timeout>
     </session-config>
 </web-app>

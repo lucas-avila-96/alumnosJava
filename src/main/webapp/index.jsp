@@ -73,6 +73,14 @@
                                 <li><a href="ListarAlumnosConMaterias">Listar Alumnos con Materias</a></li>
                             </ul>
                         </li>
+                        
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Docentes <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="ListarDocente">Listar Docentes</a></li>
+                                <li><a href="SolicitarDatosDocente">Solicitar Datos</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </nav>
